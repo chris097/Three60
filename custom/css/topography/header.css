@@ -1,0 +1,147 @@
+.header{
+    background-color: #2468EB;
+    padding: 20px 0;
+    height: 80px;
+    width: 100%;
+    margin-bottom: 0;
+    position: fixed;
+    z-index: 2;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-navbar .logo{
+    font-family: Rubik;
+    font-style: normal;
+}
+.nav-navbar .logo a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+}
+.navbar-link ul{
+    display: flex;
+}
+.navbar-link ul li{
+    list-style: none;
+    padding: 0px 10px 16.5px 0;
+    margin: 0 30px;
+}
+.navbar-link ul li:hover{
+    border-bottom: 4px #fff solid; 
+}
+.navbar-link ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.navbar-link ul li a > span{
+    margin: 0 5px;
+    font-size: 16px;
+}
+.search-form{
+    background-color: #5682F3;
+    height: 50px;
+    padding: 15px 40px;
+    border-radius: 40px;
+}
+.search-form input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+.search-form ::placeholder{
+    color: #9eb7e9f0;
+    font-size: 16px;
+}
+.search-form span > img{
+    position: absolute;
+    margin: -2px -25px;
+}
+.todo-header{
+    background-color: #fff;
+    height: 70px;
+    width: 100%;
+    top: 80px;
+    position: fixed;
+    z-index: 2;
+}
+.todo-nav{
+    display: flex;
+}
+.nav-todo{
+    display: flex;
+    justify-content: space-between;
+}
+.todos-list{
+    display: flex;
+    margin-right: 10px;
+}
+.todos-list:hover{
+    border-bottom: 2px solid #4673E4;
+}
+.num-1,
+.num-2,
+.num-3,
+.num-4,
+.num-5, 
+.num-6{
+    padding: 12px;
+    clip-path: circle();
+    font-size: 13px;
+    position: absolute;
+}
+.num-1{
+    color: #4673E4;
+    background-color: rgba(70, 115, 228, 0.06);
+}
+.num-2{
+    background-color: rgba(151, 166, 174, 0.11);
+    color: #97A6AE;
+}
+.num-3{
+    background-color: rgba(70, 115, 228, 0.18);
+    color: #4673E4;
+}
+.num-4{
+    background-color: rgba(8, 201, 85, 0.05);
+    color: #28BA63;
+}
+.num-5{
+    background-color: rgba(201, 152, 26, 0.05);
+    color: #C9981A;
+}
+.num-6{
+    background-color: rgba(242, 1, 1, 0.05);
+    color: #F20101;
+}
+.char{
+    position: relative;
+    padding: 9.75px 10px;
+    font-size: 14px;
+    position: relative;
+    margin-left: 25px;
+}
+.btn button{
+    height: 46px;
+    margin: 10px;
+    display: flex;
+    background-color: #28BA63;
+    border: none;
+    padding: 10px 15px;
+    outline: none;
+}
+.btn button:hover{
+    background-color: #07883a;
+}
+.btn button span{
+    color: #fff;
+    font-size: 16px;
+    padding-left: 10px;
+    margin-top: 2px;
+}
