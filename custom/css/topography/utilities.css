@@ -8,13 +8,30 @@
 .active{
     border-bottom: 2px solid #4673E4;
 }
+/* padding */
 .pd-50{
     padding: 50px 0;
+} 
+/* margin */
+.mgtop-14{
+    margin-top: 14px;
+}
+.mgrt-5{
+    margin-right: 5px;
+}
+.col{
+    margin-top: 10px;
+    margin-left: 180px;
 }
 .column{
     display: flex;
 }
-.column-2{
+.column-1{
     display: flex;
     justify-content: space-between;
+    padding: 20px 30px;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.04);
+}
+li{
+    list-style: none;
 }

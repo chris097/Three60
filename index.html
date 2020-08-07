@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./custom/css/style.css">
+    <link rel="icon" type="image/svg" href="./custom/icons/user.svg">
     <title>Three60- Todo app</title>
 </head>
 <body>
@@ -139,6 +140,20 @@
                         </div>
                         <div class="class-note_dot3">
                             <img src="./custom/icons/3-dots.png" alt="">
+                            <ul class="modal">
+                                <li>
+                                    <img src="./custom/icons/img-7.png" alt="">
+                                    <span>Mark as complete</span>
+                                </li>
+                                <li>
+                                    <img src="./custom/icons/icon-2.png" alt="">
+                                    <span>Edit</span>
+                                </li>
+                                <li>
+                                    <img src="./custom/icons/icon-1.png" alt="">
+                                    <span>Delete</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div><!--start here-->
@@ -153,6 +168,12 @@
                         </div>
                         <div class="class-note_dot3">
                             <img src="./custom/icons/3-dots.png" alt="">
+                            <!-- <ul class="modal">
+                                <li>
+                                    <img src="./custom/icons/img-7.png" alt="">
+                                    Mark as complete
+                                </li>
+                            </ul> -->
                         </div>
                     </div>
                 </div><!--start here-->
@@ -193,14 +214,16 @@
             <div class="layer-2">
                 <div class="layer-2_container">
                     <div class="column-2">
-                        <div class="column">
+                       <div class="column">
+                         <div class="column">
                             <p class="count-3">3</p>
                             <p class="stage-1">In Progress</p>
-                        </div>
-                        <div class="column">
-                            <span class="img-01"><img src="./custom/icons/clock.png" alt="" width="20" height="20"></span>
+                         </div>
+                         <div class="column col">
+                            <span class="mgtop-14 mgrt-5"><img src="./custom/icons/clock.png" alt="" width="20" height="20"></span>
                             <p>24/07/2019</p>
                         </div>
+                       </div>
                     </div>
                     <div class="layer-content">
                         <div class="layer-tittle">
@@ -210,10 +233,32 @@
                         </div>
                     </div>
                     <div class="edit-delete">
-                        <img src="./custom/icons/img-5.png" alt="">
-                        <img src="./custom/icons/img-6.png" alt="">
+                        <img src="./custom/icons/img-6.png" alt="delete-img">
+                        <img src="./custom/icons/img-5.png" alt="edit-img">
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- Return all modals -->
+    <div class="pop-up"></div>
+    <div class="create-task">
+        <div class="create-task_container">
+            <div class="column-1">
+                <div class="create-task_tittle">Create Todo</div>
+                <div class="create-task_exit">X</div>
+            </div>
+            <div class="create-task_form">
+                <div>
+                    <input class="tittle-col" type="text" id="tittle" placeholder="Tittle">
+                </div>
+                <div>
+                    <input class="description-col" type="text" id="description" placeholder="Description">
+                </div>
+            </div>
+            <div class="create-task_btn">
+                <button class="btn-0" type="reset">Cancel</button>
+                <button class="btn-1" type="submit">Create</button>
             </div>
         </div>
     </div>
