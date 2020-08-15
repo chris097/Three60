@@ -62,19 +62,19 @@
 }
 @media screen and (max-width: 450px){
     .card-1{
-        width: 85%;
-    }
-}
- @media screen and (max-width: 400px){
-    .card-1{
         width: 80%;
     }
 }
- /* @media screen and (max-width: 330px){
+ /* @media screen and (max-width: 400px){
+    .card-1{
+        width: 80%;
+    }
+} */
+ @media screen and (max-width: 350px){
     .card-1{
         width: 66.88%;
     }
-}   */
+}  
 .class-note_result-1,
 .class-note_result-2,
 .class-note_result-3,
