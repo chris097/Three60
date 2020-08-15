@@ -1,0 +1,8 @@
+@keyframes animate1{
+    from{
+        width: 0;
+    }
+    to{
+        width: 35.5%;
+    }
+}
