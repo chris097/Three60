@@ -65,6 +65,11 @@
         width: 80%;
     }
 }
+@media screen and (max-width: 370px){
+    .card-1{
+        width: 70%;
+    }
+}
  @media screen and (max-width: 330px){
     .card-1{
         width: 65.88%;
