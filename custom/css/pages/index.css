@@ -75,6 +75,11 @@
         width: 66.88%;
     }
 }  
+ @media screen and (max-width: 300px){
+    .card-1{
+        width: 60.88%;
+    }
+}  
 .class-note_result-1,
 .class-note_result-2,
 .class-note_result-3,
