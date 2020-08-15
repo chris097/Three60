@@ -79,7 +79,7 @@
     margin-top: 20px;
     overflow-x: scroll;
     border-radius: 40px;
-    /* display: none; */
+    display: none;
 }
 .mobile-x-todos > div{
     display: flex;

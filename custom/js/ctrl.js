@@ -3,7 +3,7 @@ import {dropDown} from './UI.js';
 
 //UI classes
 let layer =  document.querySelector('.layer-2'),
-    cards = document.querySelectorAll('.card-1')
+    cards = document.querySelectorAll('.class-note')
 
 
 // call functio

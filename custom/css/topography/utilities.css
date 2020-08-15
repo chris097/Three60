@@ -1,6 +1,6 @@
 .container{
     max-width: 95%;
-    margin: 0 auto;
+    margin: 0 2rem;
 }
 .-active{
     border-bottom: 4px #fff solid;
