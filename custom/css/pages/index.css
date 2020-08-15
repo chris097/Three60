@@ -67,15 +67,15 @@
 }
  @media screen and (max-width: 400px){
     .card-1{
-        width: 70%;
+        width: 75%;
     }
 }
- @media screen and (max-width: 367px){
+ /* @media screen and (max-width: 367px){
     .card-1{
-        width: 66.88%;
+        width: 65.88%;
     }
-}  
- @media screen and (max-width: 300px){
+}   */
+ @media screen and (max-width: 320px){
     .card-1{
         width: 60.88%;
     }
