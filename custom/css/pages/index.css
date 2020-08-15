@@ -60,12 +60,12 @@
         width: 90%;
     }
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 450px){
     .card-1{
-        width: 80%;
+        width: 85%;
     }
 }
-@media screen and (max-width: 370px){
+/* @media screen and (max-width: 370px){
     .card-1{
         width: 75%;
     }
@@ -74,7 +74,7 @@
     .card-1{
         width: 66.88%;
     }
-} 
+}  */
 .class-note_result-1,
 .class-note_result-2,
 .class-note_result-3,
