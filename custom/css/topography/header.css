@@ -69,7 +69,7 @@
     width: 100%;
     top: 80px;
     position: fixed;
-    z-index: 2;
+    z-index: 222;
 }
 .todo-nav{
     display: flex;
@@ -79,6 +79,7 @@
     margin-top: 20px;
     overflow-x: scroll;
     border-radius: 40px;
+    outline: none;
     display: none;
 }
 .mobile-x-todos > div{
@@ -98,14 +99,20 @@
     border: none;
     background-color: transparent;
     outline: none;
+    padding-top: 5px;
 }
 .mobile-x-todos-list{
     display: flex;
     border: none;
     background-color: transparent;
+    outline: none;
     
 }
-.todos-list:hover{outline: none; 
+.mobile-x-todos-list:hover{
+    border-bottom: 2px solid #4673E4;
+}
+.todos-list:hover{
+    outline: none; 
     border-bottom: 2px solid #4673E4;
 }
 .num-1,
@@ -231,7 +238,7 @@
 .close-menu{
     position: fixed;
     right: 40px;
-    z-index: 2;
+    z-index: 222;
     top: 23px;
     width: 40px;
     height: 35px;
@@ -330,6 +337,30 @@
     .open-menu-1{
         display: block;
     }
+    .col{
+        width: 80% !important;
+    }
+}
+@media screen and (max-width: 1050px){
+    .card-1{
+        width: 100%;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 768px){
+    .layer-2{
+        top: 140px;
+        width: 100%;
+        padding-top: 30px;
+        z-index: 22;
+        animation: none;
+    }
+    .close-arrow{
+        margin-top: 20px;
+    }
+    .layer-content{
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 934px){
@@ -351,9 +382,14 @@
     }
     .header{
         background-color: #fff;
+        z-index: 222;
     }
     .mobile-x,
     .mobile-x-todos{
         display: block;
     }
+    .layer-2{
+        top: 40px;
+    }
 }
+

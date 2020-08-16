@@ -40,7 +40,8 @@
             cancelEditTask: '.edit-task_btn .btn-0',
             editTaskExit: '.edit-task_exit',
             mobileTodoTask: '.mobile-todo-task',
-            mobileLink: '.mobile-link'
+            mobileLink: '.mobile-link',
+            closeArror: '.close-arrow'
          }
        }
      }
@@ -115,6 +116,7 @@
     UIController(inputBtn.editTaskExit).addEventListener(inputBtn.click, removeCreateTask);
     UIController(inputBtn.editCol).addEventListener(inputBtn.click, displayEditTask);
     UIController(inputBtn.deleteCol).addEventListener(inputBtn.click, displayDeleteTask);
+    UIController(inputBtn.closeArror).addEventListener(inputBtn.click, removeCreateTask);
 
     UIController(inputBtn.open1).addEventListener(inputBtn.click, displayMobileTodoTask);
     UIController(inputBtn.close1).addEventListener(inputBtn.click, removeMobileTodoTask);

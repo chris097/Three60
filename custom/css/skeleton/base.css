@@ -1,14 +1,14 @@
 .modal{
     width: 189px;
     height: 172px;
-    background: #FFFFFF;
+    background-color: #fff;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.09);
     margin-left: -190px;
     margin-top: -16px;
-    position: absolute;
+    position: fixed;
     border-radius: 2px;
     padding: 0;
-    /* display: none; */
+    z-index: 222;
 }
 /* @media screen and (max-width: 600px){
     .modal{
@@ -56,7 +56,7 @@
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 2;
+    z-index: 222;
     display: none;
     transition: ease-in-out 2s;
 }
@@ -69,8 +69,9 @@
     z-index: 999;
     position: fixed;
     opacity: 222;
-    top: 100px;
-    margin: 0 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
     display: none;
 }
 .create-task_tittle,
@@ -163,8 +164,9 @@
     z-index: 999;
     position: fixed;
     opacity: 222;
-    top: 150px;
-    margin: 0 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
     display: none;
 }
 .delete-task_exit{

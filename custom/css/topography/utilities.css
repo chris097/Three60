@@ -13,17 +13,24 @@
     padding: 50px 0;
 } 
 /* margin */
-.mgtop-14{
-    margin-top: 14px;
+.mgtop-20{
+    margin-top: 20px;
 }
 .mgrt-5{
     margin-right: 5px;
 }
 .col{
-    margin-top: 10px;
-    margin-left: 180px;
+    display: flex;;
+    /* margin-left: 180px; */
+    justify-content: space-between;
+    width: 30%;
 }
-.column{
+.col-1{
+    display: flex;
+    margin-top: 10px;
+}
+.col-2{
+    padding: 20px 0;
     display: flex;
 }
 .column-1{
@@ -37,4 +44,4 @@ li{
 }
 a{
     text-decoration: none;
-}
+} 
