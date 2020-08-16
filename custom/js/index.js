@@ -41,7 +41,8 @@
             editTaskExit: '.edit-task_exit',
             mobileTodoTask: '.mobile-todo-task',
             mobileLink: '.mobile-link',
-            closeArror: '.close-arrow'
+            closeArror: '.close-arrow',
+            mobileXCreateTask: '.mobile-x-create-task'
          }
        }
      }
@@ -117,6 +118,7 @@
     UIController(inputBtn.editCol).addEventListener(inputBtn.click, displayEditTask);
     UIController(inputBtn.deleteCol).addEventListener(inputBtn.click, displayDeleteTask);
     UIController(inputBtn.closeArror).addEventListener(inputBtn.click, removeCreateTask);
+    UIController(inputBtn.mobileXCreateTask).addEventListener(inputBtn.click, displayCreateTask);
 
     UIController(inputBtn.open1).addEventListener(inputBtn.click, displayMobileTodoTask);
     UIController(inputBtn.close1).addEventListener(inputBtn.click, removeMobileTodoTask);

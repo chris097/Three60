@@ -82,6 +82,23 @@
     transform: translate(-50% ,-50%);
     display: none;
 }
+@media screen and (max-width: 450px){
+    .create-task,
+    .edit-task{
+        width: 95%;
+    }
+    .create-task_form div > textarea,
+    .edit-task_form div > textarea{
+        width: 100% !important;
+    }
+    .delete-task{
+        width: 95% !important;
+    }
+    .delete-btn{
+        margin-top: 10px !important;
+    }
+    
+}
 .create-task_tittle,
 .edit-task_tittle{
     font-size: 18px;
