@@ -5,7 +5,7 @@
     width: 100%;
     margin-bottom: 0;
     position: fixed;
-    z-index: 2;
+    z-index: 999;
 }
 .navbar{
     display: flex;
@@ -266,7 +266,7 @@
     left: 0;
     width: 100%;
     background-color: #fff;
-    z-index: 222;
+    z-index: 999;
     display: none;
 }
 .mobile-nav li{
@@ -382,7 +382,7 @@
     }
     .header{
         background-color: #fff;
-        z-index: 222;
+        z-index: 999;
     }
     .mobile-x,
     .mobile-x-todos{

@@ -93,6 +93,7 @@
     }
     .delete-task{
         width: 95% !important;
+        padding: 0 3.5px;
     }
     .delete-btn{
         margin-top: 10px !important;
