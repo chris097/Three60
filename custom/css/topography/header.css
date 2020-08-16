@@ -352,7 +352,7 @@
         top: 140px;
         width: 100%;
         padding-top: 30px;
-        z-index: 22;
+        z-index: 999;
         animation: none;
     }
     .close-arrow{
@@ -389,7 +389,7 @@
         display: block;
     }
     .layer-2{
-        top: 40px;
+        top: 51px;
     }
 }
 
