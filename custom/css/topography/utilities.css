@@ -45,3 +45,14 @@ li{
 a{
     text-decoration: none;
 } 
+.mg-5{
+    margin: 0 30px;
+}
+.text-center{
+    align-self: center;
+    text-align: center;
+}
+/* button{
+    border: .5px solid #979D9F;
+    outline: none;
+} */

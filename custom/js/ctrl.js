@@ -1,16 +1,9 @@
-import {dropDown} from './UI.js';
-// import {markComplete} from './UI.js';
+import {eventController} from './links.js';
+import {createUIClass} from './classes.js';
 
-//UI classes
-let layer =  document.querySelector('.layer-2'),
-    cards = document.querySelectorAll('.class-note')
+eventController(createUIClass)
 
 
-// call functio
-dropDown(cards, layer, 'block')
 
-// const open2 = document.querySelector('.open-menu')
-// console.log(open2)
-// open2.style.display='block'
 
 
