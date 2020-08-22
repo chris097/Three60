@@ -18,7 +18,7 @@
                     <div class="navbar-link">
                         <ul>
                             <li>
-                                <a href="index.html">
+                                <a href="home.html">
                                 <img src="./custom/icons/img-1.svg" alt="image-1">
                                  <span>Todos</span>
                                 </a>
@@ -171,7 +171,7 @@
                                 </button>
                             </li>
                             <li>
-                                <button>
+                                <button onclick="del()">
                                     <img src="./custom/icons/icon-1.png" alt="">
                                     <span>Delete</span>
                                 </button>
@@ -196,7 +196,7 @@
                                 </button>
                             </li>
                             <li>
-                                <button>
+                                <button onclick="del()">
                                     <img src="./custom/icons/icon-1.png" alt="">
                                     <span>Delete</span>
                                 </button>
@@ -221,7 +221,7 @@
                                 </button>
                             </li>
                             <li>
-                                <button>
+                                <button onclick="del()">
                                     <img src="./custom/icons/icon-1.png" alt="">
                                     <span>Delete</span>
                                 </button>
@@ -246,7 +246,7 @@
                                 </button>
                             </li>
                             <li>
-                                <button>
+                                <button onclick="del()">
                                     <img src="./custom/icons/icon-1.png" alt="">
                                     <span>Delete</span>
                                 </button>
@@ -277,7 +277,7 @@
                                             </button>
                                         </li>
                                         <li>
-                                            <button>
+                                            <button onclick="del()">
                                                 <img src="./custom/icons/icon-1.png" alt="">
                                                 <span>Delete</span>
                                             </button>
@@ -305,7 +305,7 @@
                                             </button>
                                         </li>
                                         <li>
-                                            <button>
+                                            <button onclick="del()">
                                                 <img src="./custom/icons/icon-1.png" alt="">
                                                 <span>Delete</span>
                                             </button>
@@ -333,7 +333,7 @@
                                             </button>
                                         </li>
                                         <li>
-                                            <button>
+                                            <button onclick="del()">
                                                 <img src="./custom/icons/icon-1.png" alt="">
                                                 <span>Delete</span>
                                             </button>
@@ -363,7 +363,7 @@
                                             </button>
                                         </li>
                                         <li>
-                                            <button>
+                                            <button onclick="del()">
                                                 <img src="./custom/icons/icon-1.png" alt="">
                                                 <span>Delete</span>
                                             </button>
@@ -391,7 +391,7 @@
                                             </button>
                                         </li>
                                         <li>
-                                            <button>
+                                            <button onclick="del()">
                                                 <img src="./custom/icons/icon-1.png" alt="">
                                                 <span>Delete</span>
                                             </button>
@@ -419,7 +419,7 @@
                                             </button>
                                         </li>
                                         <li>
-                                            <button>
+                                            <button onclick="del()">
                                                 <img src="./custom/icons/icon-1.png" alt="">
                                                 <span>Delete</span>
                                             </button>
@@ -476,16 +476,29 @@
       for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
       }
-    //   tablinks = document.getElementsByClassName("active");
-    //   for (i = 0; i < tablinks.length; i++) {
-    //     tablinks[i].style.borderBottom = "";
-    //   }
       document.getElementById(pageName).style.display = "block";
-    //   elmnt.style.backgroundColor = color;
     }
-    
-    // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
+
+    function UIController(className, value){
+        let UI = document.querySelector(className);
+        if(value){
+          UI.style.display = value;
+        }
+        return UI;
+     };
+
+//  function edit(){
+//      console.log('something was clicked...')
+//     UIController('.pop-up', 'block');
+//     UIController('.edit-task','block')
+// }
+
+ function del(){
+     console.log('something was clicked...')
+    UIController('.pop-up', 'block');
+    UIController('.delete-task','block')
+}
     </script>
 </body>
 </html>

@@ -77,6 +77,15 @@
     top: 80px;
     z-index: 222;
 }
+@media screen and (max-width: 960px){
+    .section-1{
+        display: none;
+    }
+    .section-2{
+        width: 100% !important;
+        margin: 0 !important;
+    }
+}
 .link-folder{
     /* background-color: rgba(36, 104, 235, 0.03); */
     padding: 10px;
@@ -276,8 +285,8 @@
     z-index: 999;
     position: fixed;
     opacity: 222;
-    top: 50%;
-    left: 13%;
+    top: 310px;
+    left: 160px;
     transform: translate(-50% ,-50%);
     font-family: Rubik;
     font-style: normal;
