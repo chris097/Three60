@@ -363,12 +363,15 @@
     }
 }
 
-@media screen and (max-width: 934px){
+@media screen and (max-width: 976px){
     .navbar-link,
-    .search-form{
+    .search-form,
+    .search-note,
+    .upload-me{
         display: none;
     }
-    .open-menu{
+    .open-menu,
+    .search-note-1{
         display: block;
     }
     .nav-navbar .logo a{
