@@ -64,17 +64,17 @@
                             <span>Sign up with Google</span>
                         </button>
                         <h4>OR</h4>
-                        <form class="form-input">
-                            <div><input type="text" id="username" placeholder="Username" required="true"></div>
-                            <div><input type="email" id="email" placeholder="Email" required="true"></div>
-                            <div><input type="password" id="password" placeholder="Set Password" required="true"></div>
-                            <button class="auth-create-btn">
+                        <div class="form-input">
+                            <div><input type="text" id="username" placeholder="Username" required></div>
+                            <div><input type="email" id="email" placeholder="Email"></div>
+                            <div><input type="password" id="password" placeholder="Set Password"></div>
+                            <button type="submit" class="auth-create-btn">
                                 <a href="home.html">
                                     <span>Create Account</span>
                                     <img src="./custom/icons/icon-26.svg" alt="">
                                 </a>
                             </button>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -96,16 +96,16 @@
                             <span>Sign up with Google</span>
                         </button>
                         <h4>OR</h4>
-                        <form class="form-input">
-                            <div><input type="email" id="email" placeholder="Email" required></div>
-                            <div><input type="password" id="password" placeholder="Set Password" required></div>
+                        <div class="form-input">
+                            <div><input type="email" id="email" placeholder="Email"></div>
+                            <div><input type="password" id="password" placeholder="Set Password"></div>
                             <button class="auth-create-btn">
                                 <a href="home.html">
                                     <span>Login</span>
                                     <img src="./custom/icons/icon-26.svg" alt="">
                                 </a>
                             </button>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -116,25 +116,43 @@
     </div>
 </body>
 <script>
-    function openPage(pageName,elmnt) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName('all');
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      document.getElementById(pageName).style.display = "block";
-    }
-    document.getElementById("defaultOpen").click();
 
-    const res = document.querySelector('.login-slide')
-    res.style.display='none'
-    const res1 = document.querySelector('.log-btn')
-    res1.addEventListener('click', () => {
-        res.style.display='block'
+    let login = document.getElementById('login')
+    let signUp = document.getElementById('signup')
+    let clickSign = document.querySelector('.log-btn')
+    let clickLog = document.querySelector('.sign-btn')
+
+    clickSign.addEventListener('click', () => {
+        login.style.display = 'block';
+        signUp.style.display = 'none'
     })
-    const res2 = document.querySelector('.sign-btn')
-    res2.addEventListener('click', () => {
-        res.style.display='none'
+
+    clickLog.addEventListener('click', () => {
+        login.style.display = 'none';
+        signUp.style.display = 'block'
     })
+
+    
+    login.style.display = 'none'
+    // function openPage(pageName,elmnt) {
+    //   var i, tabcontent, tablinks;
+    //   tabcontent = document.getElementsByClassName('all');
+    //   for (i = 0; i < tabcontent.length; i++) {
+    //     tabcontent[i].style.display = "none";
+    //   }
+    //   document.getElementById(pageName).style.display = "block";
+    // }
+    // document.getElementById("defaultOpen").click();
+
+    // const res = document.querySelector('.login-slide')
+    // res.style.display='none'
+    // const res1 = document.querySelector('.log-btn')
+    // res1.addEventListener('click', () => {
+    //     res.style.display='block'
+    // })
+    // const res2 = document.querySelector('.sign-btn')
+    // res2.addEventListener('click', () => {
+    //     res.style.display='none'
+    // })
 </script>
 </html>

@@ -11,6 +11,9 @@ dropDown(cards, layer, 'block')
 
 eventController(createUIClass)
 
+const check = document.querySelector('.auth-create-btn')
+console.log(check)
+
 
    
 
