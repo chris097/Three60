@@ -27,3 +27,20 @@
     height: 40px;
     clip-path: circle();
 }
+@media screen and (max-width: 450px){
+    .section-grid-container,
+    .grid-cards{
+        flex-direction: column;
+        margin: 10px 0;
+    }
+    .grid-flex{
+        flex-direction: column;
+        margin-bottom: -24px;
+    }
+    .grid-flex .grid-cards:nth-child(2){
+        margin: 0 !important;
+    }
+    .modal-2{
+        right: 4px !important;
+    }
+}
